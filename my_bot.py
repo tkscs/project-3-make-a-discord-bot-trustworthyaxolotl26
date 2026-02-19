@@ -10,13 +10,28 @@ This function will be called every time anyone says anything on a channel where 
 * You can have certain words or patterns in the messages trigger the bot.
 * You can have the bot respond differently to different users
 """
+
+names = ["fox bot", "robot", "FOX BOT", "Fox Bot", "Fox bot", "fox Bot"]
+
 def should_i_respond(user_message, user_name):
-  if "fox bot" in user_message:
-    return True
-  elif "robot" in user_message:
-    return True
-  else:
-    return False
+  for name in names:
+    if name in user_message:
+      return True
+    
+  # if "fox bot" in user_message:
+  #   return True
+  # elif "robot" in user_message:
+  #   return True
+  # elif "FOX BOT" in user_message:
+  #   return True
+  # elif "Fox Bot" in user_message:
+  #   return True
+  # elif "Fox bot" in user_message:
+  #   return True
+  # elif names in user_message:
+  #   return True
+  # else:
+  #   return False
 
 """
 **Do NOT change the name of this function.**
@@ -33,16 +48,70 @@ def respond(user_message, user_name):
   elif "best animal" in user_message:
     return "the best animal is a fox. "
   elif "ascii fox" in user_message:
-    return """   /\/\                    ____
-< •   \             __/       _]
-  \      \_____/       __/
-   \                       /
-   |     ______     |
-   | |  |            | |  |
- [_|_|           [_|_|
-"""
-  elif "show me" in user_message:
-    return "not yet."
+    return """   here is a bad ascii fox
+
+  /\-/\              _________
+< •    \       _____/      ___]
+  \     \_____/      _____/
+   \                /
+   |    _______    |
+   | | |       | | |
+  [_|_|       [_|_|
+
+           """
+  elif "fox pic" in user_message:
+    return """                
+                                    ██                  
+                                  ██  ██                
+                                  ██    ██              
+                                ██      ██              
+      ████                ██████          ██        ████
+      ██  ████        ████                ██      ██  ██
+      ██      ████  ██░░░░░░  ░░  ░░      ██    ██    ██
+      ████        ██░░░░░░░░░░░░░░  ░░  ██    ██    ████
+      ██▒▒██        ██░░░░░░░░░░░░░░░░████  ██    ██▒▒██
+      ██▒▒▒▒██        ██████████████████████    ██▒▒▒▒██
+        ██▒▒▒▒██    ░░░░░░░░░░░░░░░░░░░░██    ██▒▒▒▒██  
+        ██▒▒▒▒▒▒██  ░░░░░░░░░░░░░░░░░░░░░░░░██▒▒▒▒▒▒██  
+          ██▒▒▒▒▒▒██░░░░░░░░░░░░░░░░░░░░░░██▒▒▒▒▒▒██    
+          ██▒▒▒▒▒▒▒▒██░░░░░░░░░░░░░░░░░░░░██▒▒▒▒▒▒██    
+            ██▒▒▒▒██░░░░░░░░░░░░░░░░░░░░░░░░██▒▒▒▒██    
+            ██▒▒██░░░░░░░░░░░░░░░░░░░░░░░░░░██▒▒██      
+          ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██        
+        ██░░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██      
+      ██░░░░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██      
+    ██░░░░░░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██      
+  ██░░░░░░░░░░░░██░░██████░░░░░░░░░░░░░░██████░░██      
+  ██░░░░░░░░░░░░██░░░░░░░░██░░░░░░░░░░██░░░░░░░░██      
+  ██░░░░░░░░░░░░░░██░░░░░░░░██░░░░░░██░░░░░░░░██░░██    
+██░░░░░░░░░░░░░░░░░░██░░░░░░░░    ░░  ░░░░░░██░░░░██    
+██░░░░░░░░░░░░░░░░░░░░████░░    ████    ████░░░░░░░░██  
+██░░░░░░░░░░██░░░░░░░░░░░░████        ██░░░░░░░░░░░░██  
+  ██░░░░░░░░██░░░░░░░░██████████████████████░░░░░░░░██  
+  ██░░░░░░░░░░████░░░░░░          ██          ░░░░░░██  
+    ████████████████████████████████████████████████   
+
+              
+                                            
+                   to see more foxes like this, go to https://textart.sh/topic/fox  """
+  elif "dot fox" in user_message:
+    return """⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠙⠻⢶⣄⡀⠀⠀⠀⢀⣤⠶⠛⠛⡇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣇⠀⠀⣙⣿⣦⣤⣴⣿⣁⠀⠀⣸⠇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣡⣾⣿⣿⣿⣿⣿⣿⣿⣷⣌⠋⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣷⣄⡈⢻⣿⡟⢁⣠⣾⣿⣦⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⠘⣿⠃⣿⣿⣿⣿⡏⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠈⠛⣰⠿⣆⠛⠁⠀⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣦⠀⠘⠛⠋⠀⣴⣿⠁⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⣾⣿⣿⣿⣿⡇⠀⠀⠀⢸⣿⣏⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠀⠀⠀⠾⢿⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣿⣿⣿⣿⣿⣿⡿⠟⠋⣁⣠⣤⣤⡶⠶⠶⣤⣄⠈⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢰⣿⣿⣮⣉⣉⣉⣤⣴⣶⣿⣿⣋⡥⠄⠀⠀⠀⠀⠉⢻⣄⠀⠀⠀⠀⠀
+⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣋⣁⣤⣀⣀⣤⣤⣤⣤⣄⣿⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠋⠉⠁⠀⠀⠀⠀⠈⠛⠃⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"""
+  elif "rename" in user_message:
+    new_name()
   else: 
     return f"""I've been called!
     {user_message.replace("fox bot", user_name)}"""
@@ -56,4 +125,5 @@ def number_game():
 
 def new_name():
   name = input("what shall my new name be?")
+  names.append[name]
   return f"you may now call me {name}"
