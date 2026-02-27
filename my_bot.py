@@ -11,7 +11,7 @@ This function will be called every time anyone says anything on a channel where 
 * You can have the bot respond differently to different users
 """
 
-names = ["fox bot", "robot", "FOX BOT", "Fox Bot", "Fox bot", "fox Bot", "robot fox", "🦊🤖", "robo fox", "foox boot", "FOX bot"]
+names = ["fox bot", "robot", "FOX BOT", "Fox Bot", "Fox bot", "fox Bot", "robot fox", "🦊🤖", "robo fox", "foox boot", "FOX bot", "fox BOT"]
 
 def should_i_respond(user_message, user_name):
   for name in names:
@@ -32,7 +32,6 @@ def respond(user_message, user_name):
   if "number game" in user_message:
     play = True
     while play == True:
-      UA = ""
       number = 0
       guess = 0
       ask = ""
@@ -67,10 +66,19 @@ def respond(user_message, user_name):
 `   | | |       | | |`
 `  [_|_|       [_|_|`
 
+` /\______/\`
+`|          |`
+`|          |`
+`<\_________/>`
+`< •   V   • >`
+`<___________>`
+
 
            """
   elif "big fox emojis" in user_message:
-    return """                         
+    return "big big or small big?"
+    if user_message == "big big":
+      return """                         
 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
 🟦 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
@@ -98,8 +106,9 @@ def respond(user_message, user_name):
 🟦 ⬛ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦
 🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦 🟦
 🟦 🟦 🟦 ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦 🟦 🟦
-🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦  
-
+🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦  """
+    elif user_message == "small big":
+      return """
 🟦🟦⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛🟦🟦
 🟦🟦⬛⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛⬛🟦🟦
 🟦🟦⬛🟥⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛🟥⬛🟦🟦
@@ -157,16 +166,16 @@ japanese: kitsune"""
     return "hangman?"
   elif "bot info" in user_message:
     return """you can ask me the following questons for an intersting awnser:
-    what is the _best animal_?
-    draw me an _ascii fox_
+    what is the *best animal*?
+    draw me an /ascii fox/
     show me some _big fox emojis_
-    create a _dot fox_
-    tell me some fox info
-    whats a good fox book?
-    how do you say fox in other languages?
-    tell me a riddle
-    lets play a number game
-    lets play a word game"""
+    create a -dot fox-
+    tell me some *fox info*
+    whats a good *fox book*?
+    how do you say fox in *other languages*?
+    tell me a *riddle*
+    lets play a *number game*
+    lets play a *word game*"""
   else: 
     return f"""🦊 says 
     {user_message.replace("fox bot", user_name)}"""
