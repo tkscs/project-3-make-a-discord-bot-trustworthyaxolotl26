@@ -11,7 +11,7 @@ This function will be called every time anyone says anything on a channel where 
 * You can have the bot respond differently to different users
 """
 
-names = ["fox bot", "robot", "FOX BOT", "Fox Bot", "Fox bot", "fox Bot", "robot fox", "🦊🤖", "robo fox", "foox boot", "FOX bot", "fox BOT"]
+names = ["fox bot", "robot", "FOX BOT", "Fox Bot", "Fox bot", "fox Bot", "robot fox", "🦊🤖", "robo fox", "foox boot", "FOX bot", "fox BOT", "bot fox", "fox bot 26", "FoxBot26", "foxbot26", "fix bit", "fax bat", "fex bet", "fux but", "foox bot", "FOXBOT26", ]
 
 def should_i_respond(user_message, user_name):
   for name in names:
@@ -75,61 +75,62 @@ def respond(user_message, user_name):
 
 
            """
-  elif "big fox emojis" in user_message:
-    return "big big or small big?"
-    if user_message == "big big":
-      return """                         
-🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-🟦 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-🟦 ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ 🟧 🟧 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-🟦 ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 ⬛ ⬛ 🟧 🟧 ⬜ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-🟦 ⬛ 🟧 🟧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟧 🟧 ⬜ ⬜ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-🟦 ⬛ 🟧 ⬜ 🟧 🟧 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 ⬜ ⬜ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 
-🟦 ⬛ 🟧 ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-🟦 ⬛ 🟧 ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-🟦 🟦 ⬛ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
-🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬜ ⬛ ⬛ 🟧 🟧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦
-🟦 ⬛ 🟧 🟧 🟧 ⬜ ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ ⬛ ⬛ 🟧 ⬛ 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦 🟦
-🟦 ⬛ 🟧 🟧 🟧 ⬛ ⬛ ⬛ ⬛ 🟧 🟧 🟧 🟧 ⬛ ⬛ ⬜ ⬛ 🟧 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦
-🟦 ⬛ 🟧 🟧 🟧 ⬛ ⬛ ⬜ ⬛ 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟧 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦
-🟦 ⬛ ⬛ ⬜ 🟧 🟧 ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬜ ⬛ 🟧 ⬛ ⬛ ⬛ ⬛ ⬛ 🟧 🟧 ⬛ 🟦
-⬛ ⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬜ ⬛ 🟧 ⬛ ⬛ 🟧 🟧 🟧 🟧 ⬛ ⬛ ⬛ ⬛
-⬛ ⬜ ⬜ ⬜ ⬛ ⬛ ⬜ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 ⬜ ⬛ ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛
-⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛
-⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛
-⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛
-⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛
-⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦
-🟦 ⬛ ⬜ ⬜ 🟧 🟧 🟧 ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦
-🟦 ⬛ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦
-🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦 🟦
-🟦 🟦 🟦 ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦 🟦 🟦
-🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦  """
-    elif user_message == "small big":
-      return """
-🟦🟦⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛🟦🟦
-🟦🟦⬛⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛⬛🟦🟦
-🟦🟦⬛🟥⬛🟦🟦🟦🟦🟦🟦🟦🟦🟦⬛🟥⬛🟦🟦
-🟦🟦⬛🟥🟧⬛🟦🟦🟦🟦🟦🟦🟦⬛🟧🟥⬛🟦🟦
-🟦🟦⬛🟧🟧🟧⬛⬛⬛⬛⬛⬛⬛🟧🟧🟧⬛🟦🟦
-🟦🟦⬛🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧⬛🟦🟦
-🟦🟦⬛🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧⬛🟦🟦
-🟦🟦⬛🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧⬛🟦🟦
-🟦🟦⬛⬛🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧⬛⬛🟦🟦
-🟦⬛⬜⬜⬛⬛🟧🟧🟧🟧🟧🟧🟧⬛⬛⬜⬜⬛🟦
-⬛⬜⬜⬜⬜⬜⬛⬛🟧🟧🟧⬛⬛⬜⬜⬜⬜⬜⬛
-🟦⬛⬜⬜🟩⬜⬜⬜⬛⬛⬛⬜⬜⬜🟩⬜⬜⬛🟦
-🟦🟦⬛⬜⬜⬜⬜⬜⬜⬛⬜⬜⬜⬜⬜⬜⬛🟦🟦
-🟦⬛⬜⬜⬜⬜⬜⬜⬜⬛⬜⬜⬜⬜⬜⬜⬜⬛🟦
-⬛⬜⬜⬜⬜⬜🟥⬜⬜⬛⬜⬜🟥⬜⬜⬜⬜⬜⬛
-🟦⬛⬜⬜⬜⬜⬜🟥🟥🟥🟥🟥⬜⬜⬜⬜⬜⬛🟦
-🟦🟦⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛🟦🟦
-🟦🟦🟦⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛🟦🟦🟦
+  elif "big fox emoji" in user_message.lower:
+    x = 1
+    for i in range(x):
+      if "big big" in user_message:
+          return """                         
+    .   🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+    🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+    🟦 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+    🟦 ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ 🟧 🟧 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+    🟦 ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 ⬛ ⬛ 🟧 🟧 ⬜ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+    🟦 ⬛ 🟧 🟧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟧 🟧 ⬜ ⬜ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+    🟦 ⬛ 🟧 ⬜ 🟧 🟧 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 ⬜ ⬜ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 
+    🟦 ⬛ 🟧 ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+    🟦 ⬛ 🟧 ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+    🟦 🟦 ⬛ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+    🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
+    🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬜ ⬛ ⬛ 🟧 🟧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦
+    🟦 ⬛ 🟧 🟧 🟧 ⬜ ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ ⬛ ⬛ 🟧 ⬛ 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦 🟦
+    🟦 ⬛ 🟧 🟧 🟧 ⬛ ⬛ ⬛ ⬛ 🟧 🟧 🟧 🟧 ⬛ ⬛ ⬜ ⬛ 🟧 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦
+    🟦 ⬛ 🟧 🟧 🟧 ⬛ ⬛ ⬜ ⬛ 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟧 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦
+    🟦 ⬛ ⬛ ⬜ 🟧 🟧 ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬜ ⬛ 🟧 ⬛ ⬛ ⬛ ⬛ ⬛ 🟧 🟧 ⬛ 🟦
+    ⬛ ⬛ ⬛ ⬛ ⬜ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬜ ⬛ 🟧 ⬛ ⬛ 🟧 🟧 🟧 🟧 ⬛ ⬛ ⬛ ⬛
+    ⬛ ⬜ ⬜ ⬜ ⬛ ⬛ ⬜ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 ⬜ ⬛ ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛
+    ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛
+    ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛
+    ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛
+    ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛
+    ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦
+    🟦 ⬛ ⬜ ⬜ 🟧 🟧 🟧 ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦
+    🟦 ⬛ ⬜ ⬜ ⬜ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦
+    🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦 🟦
+    🟦 🟦 🟦 ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦 🟦 🟦
+    🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦  """
+      elif "small big" in user_message:
+          return """
+    .   🟦 🟦 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ 🟦 🟦
+    🟦 🟦 ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ 🟦 🟦
+    🟦 🟦 ⬛ 🟥 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ 🟥 ⬛ 🟦 🟦
+    🟦 🟦 ⬛ 🟥 🟧 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ 🟧 🟥 ⬛ 🟦 🟦
+    🟦 🟦 ⬛ 🟧 🟧 🟧 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟧 🟧 🟧 ⬛ 🟦 🟦
+    🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦
+    🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦
+    🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦
+    🟦 🟦 ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦
+    🟦 ⬛ ⬜ ⬜ ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ ⬜ ⬜ ⬛ 🟦
+    ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ ⬛ 🟧 🟧 🟧 ⬛ ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛
+    🟦 ⬛ ⬜ ⬜ 🟩 ⬜ ⬜ ⬜ ⬛ ⬛ ⬛ ⬜ ⬜ ⬜ 🟩 ⬜ ⬜ ⬛ 🟦
+    🟦 🟦 ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ 🟦 🟦
+    🟦 ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ 🟦
+    ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ 🟥 ⬜ ⬜ ⬛ ⬜ ⬜ 🟥 ⬜ ⬜ ⬜ ⬜ ⬜ ⬛
+    🟦 ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ 🟥 🟥 🟥 🟥 🟥 ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ 🟦
+    🟦 🟦 ⬛ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬜ ⬛ 🟦 🟦
+    🟦 🟦 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦
 
-
-"""
+    """ 
+  
   elif "dot fox" in user_message:
     return """
 .                                     ⣀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⣀⡀⠀⠀⠀
@@ -166,18 +167,21 @@ japanese: kitsune"""
     return "hangman?"
   elif "bot info" in user_message:
     return """you can ask me the following questons for an intersting awnser:
-    what is the *best animal*?
-    draw me an /ascii fox/
-    show me some _big fox emojis_
-    create a -dot fox-
-    tell me some *fox info*
-    whats a good *fox book*?
+    what is the ||best animal||?
+    draw me an //ascii fox//
+    show me some __big fox emojis__
+    create a --dot fox--
+    tell me some *fox info**
+    whats a good *fox book**?
     how do you say fox in *other languages*?
-    tell me a *riddle*
-    lets play a *number game*
-    lets play a *word game*"""
+    tell me a *riddle**
+    lets play a *number game**
+    lets play a *word game**
+    what are **your names?**"""
+  elif "your names" in user_message:
+     return f"here is a list of my names: {names}"
   else: 
-    return f"""🦊 says 
+    return f"""🦊 repeats:  
     {user_message.replace("fox bot", user_name)}"""
 
 number = 0
@@ -249,3 +253,11 @@ def TNG():
               print("huh")
 
   number_game()
+
+#for i in range(x):
+  #if thing
+    #return bla
+    #x +=1
+  #elif thing
+  # return blo
+  # x += 0 
