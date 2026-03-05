@@ -17,6 +17,8 @@ def should_i_respond(user_message, user_name):
   for name in names:
     if name in user_message:
       return True
+    # elif "fox bot" in user_message.lower:
+    #    return True
 
 """
 **Do NOT change the name of this function.**
@@ -27,6 +29,7 @@ This function will be called every time the `should_i_respond` function returns 
 * The bot will post the returned string on the channel where the original message was sent.
 * You can have the bot respond differently to different messages and users
 """
+
 
 def respond(user_message, user_name):
   if "number game" in user_message:
@@ -75,7 +78,7 @@ def respond(user_message, user_name):
 
 
            """
-  elif "big fox emoji" in user_message.lower:
+  elif "big fox emoji" in user_message:
     x = 1
     for i in range(x):
       if "big big" in user_message:
@@ -130,7 +133,8 @@ def respond(user_message, user_name):
     🟦 🟦 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦
 
     """ 
-  
+    else:
+       return "big big or small big??"
   elif "dot fox" in user_message:
     return """
 .                                     ⣀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⣀⡀⠀⠀⠀
@@ -150,8 +154,7 @@ def respond(user_message, user_name):
 ⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 """
   elif "rename" in user_message:
-    new_name()
-    return "fooxx" 
+    return new_name()
   elif "fox info" in user_message:
     return """foxes are very cool. they have a diet of both small aNIMALS and breeies and stuff. but why are you asking me? if you have acesesss to discord than you should just google it. im just a dum robo fox. :P"""
   elif "fox book" in user_message:
@@ -162,21 +165,21 @@ spannish: zorro
 french: renard
 japanese: kitsune"""
   elif "riddle" in user_message:
-    return "rid"
+    return "what has 4 legs and is awsome?"
   elif "word game" in user_message:
-    return "hangman?"
+    return "Sorry, this feature is under construction. Come back later?"
   elif "bot info" in user_message:
     return """you can ask me the following questons for an intersting awnser:
-    what is the ||best animal||?
-    draw me an //ascii fox//
-    show me some __big fox emojis__
-    create a --dot fox--
-    tell me some *fox info**
-    whats a good *fox book**?
-    how do you say fox in *other languages*?
-    tell me a *riddle**
-    lets play a *number game**
-    lets play a *word game**
+    what is the **best animal**?
+    draw me an **ascii fox**
+    show me some **big fox emojis**
+    create a **dot fox**
+    tell me some **fox info**
+    whats a good **fox book**?
+    how do you say fox in **other languages**?
+    tell me a **riddle**
+    ~~lets play a **number game**~~
+    ~~lets play a **word game**~~
     what are **your names?**"""
   elif "your names" in user_message:
      return f"here is a list of my names: {names}"
@@ -209,12 +212,25 @@ def number_game():
       #   high = fox_guess
   return("🦊 = fox")
 
+name = "?"
 def new_name():
-  global names
-  return "🦊 the 🦊"
-  names.append[name]
-  return f"you may now call me {name}"
-
+   global names
+   global name
+   y = 3
+   for i in range(4):
+    if y == 3:
+      y -= 1
+      return "what would you like to call me?"
+    elif y == 2: 
+      name = "ffooxx"
+      y -= 1
+      return "fix it fox"
+    elif y == 1:
+      names.append[name]
+      return f"you may now call me {name}"
+    elif y == 0:
+      return  names
+    return "well well well"
 
 def TNG():
   number = 0
