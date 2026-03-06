@@ -11,14 +11,16 @@ This function will be called every time anyone says anything on a channel where 
 * You can have the bot respond differently to different users
 """
 
-names = ["fox bot", "robot", "FOX BOT", "Fox Bot", "Fox bot", "fox Bot", "robot fox", "🦊🤖", "robo fox", "foox boot", "FOX bot", "fox BOT", "bot fox", "fox bot 26", "FoxBot26", "foxbot26", "fix bit", "fax bat", "fex bet", "fux but", "foox bot", "FOXBOT26", ]
+names = ["robot", "robot fox", "🦊🤖", "robo fox", "foox boot", "bot fox", "fox bot 26", "fix bit", "fax bat", "fex bet", "fux but", "foox bot", "🦊🤖26", "foxbot", "FoxBot", "🦊 🤖", ":fox: :robot:", ":fox::robot:", ]
 
 def should_i_respond(user_message, user_name):
   for name in names:
     if name in user_message:
       return True
-    # elif "fox bot" in user_message.lower:
-    #    return True
+    elif "fox bot" in user_message.lower():
+       return True
+    elif "foxbot26" in user_message.lower():
+       return True
 
 """
 **Do NOT change the name of this function.**
@@ -30,9 +32,8 @@ This function will be called every time the `should_i_respond` function returns 
 * You can have the bot respond differently to different messages and users
 """
 
-
 def respond(user_message, user_name):
-  if "number game" in user_message:
+  if "number game" in user_message.lower():
     play = True
     while play == True:
       number = 0
@@ -56,9 +57,9 @@ def respond(user_message, user_name):
             high = fox_guess
       play = False
       return("🦊 = fox")
-  elif "best animal" in user_message:
+  elif "best animal" in user_message.lower():
       return "the best animal is a fox. "
-  elif "ascii fox" in user_message:
+  elif "ascii fox" in user_message.lower():
       return """   here is a bad ascii fox:
 
 `  /\\-/\\               _________`
@@ -78,10 +79,10 @@ def respond(user_message, user_name):
 
 
            """
-  elif "big fox emoji" in user_message:
+  elif "big fox emoji" in user_message.lower():
     x = 1
     for i in range(x):
-      if "big big" in user_message:
+      if "big big" in user_message.lower():
           return """                         
     .   🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
     🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦
@@ -111,7 +112,7 @@ def respond(user_message, user_name):
     🟦 🟦 ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ 🟦 🟦 🟦
     🟦 🟦 🟦 ⬛ ⬛ 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 🟧 ⬛ ⬛ 🟦 🟦 🟦 🟦
     🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦  """
-      elif "small big" in user_message:
+      elif "small big" in user_message.lower():
           return """
     .   🟦 🟦 ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ 🟦 🟦
     🟦 🟦 ⬛ ⬛ 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 🟦 ⬛ ⬛ 🟦 🟦
@@ -135,7 +136,7 @@ def respond(user_message, user_name):
     """ 
     else:
        return "big big or small big??"
-  elif "dot fox" in user_message:
+  elif "dot fox" in user_message.lower():
     return """
 .                                     ⣀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⣀⡀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠙⠻⢶⣄⡀⠀⠀⠀⢀⣤⠶⠛⠛⡇⠀⠀⠀
@@ -153,22 +154,22 @@ def respond(user_message, user_name):
 ⠀⠀⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠋⠉⠁⠀⠀⠀⠀⠈⠛⠃⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 """
-  elif "rename" in user_message:
+  elif "rename" in user_message.lower():
     return new_name()
-  elif "fox info" in user_message:
+  elif "fox info" in user_message.lower():
     return """foxes are very cool. they have a diet of both small aNIMALS and breeies and stuff. but why are you asking me? if you have acesesss to discord than you should just google it. im just a dum robo fox. :P"""
-  elif "fox book" in user_message:
+  elif "fox book" in user_message.lower():
     return "fantastic mr. fox is a good book about foxes that you should read"
-  elif "other languages" in user_message:
+  elif "other languages" in user_message.lower():
     return """heres fox in other languages! 
 spannish: zorro
 french: renard
 japanese: kitsune"""
-  elif "riddle" in user_message:
+  elif "riddle" in user_message.lower():
     return "what has 4 legs and is awsome?"
-  elif "word game" in user_message:
+  elif "word game" in user_message.lower():
     return "Sorry, this feature is under construction. Come back later?"
-  elif "bot info" in user_message:
+  elif "bot info" in user_message.lower():
     return """you can ask me the following questons for an intersting awnser:
     what is the **best animal**?
     draw me an **ascii fox**
@@ -180,9 +181,9 @@ japanese: kitsune"""
     tell me a **riddle**
     ~~lets play a **number game**~~
     ~~lets play a **word game**~~
-    what are **your names?**"""
-  elif "your names" in user_message:
-     return f"here is a list of my names: {names}"
+    what are **your names**?"""
+  elif "your names" in user_message.lower():
+     return f"I respond to any form of 'foxbot' and 'foxbot26', but I also respond to: {names}"
   else: 
     return f"""🦊 repeats:  
     {user_message.replace("fox bot", user_name)}"""
@@ -212,25 +213,24 @@ def number_game():
       #   high = fox_guess
   return("🦊 = fox")
 
-name = "?"
+
 def new_name():
    global names
-   global name
-   y = 3
+   i = 4
+   name = "?fox? ?bot?"
+   names.append(name)
    for i in range(4):
-    if y == 3:
-      y -= 1
+    i -= 1
+    if i == 3:
       return "what would you like to call me?"
-    elif y == 2: 
+    elif i == 2: 
       name = "ffooxx"
-      y -= 1
-      return "fix it fox"
-    elif y == 1:
-      names.append[name]
+      return f"adding {name}"
+    elif i == 1:
+      names.append(name)
       return f"you may now call me {name}"
-    elif y == 0:
+    elif i == 0:
       return  names
-    return "well well well"
 
 def TNG():
   number = 0
@@ -277,3 +277,27 @@ def TNG():
   #elif thing
   # return blo
   # x += 0 
+
+
+#     words = input("what is your message: ")
+
+# def alt_caps(original_string):
+#     x = 1
+#     new_string = ""
+#     i = 0
+#     for character in words:
+#         if x > 0:
+#             words.upper
+#             character.upper
+#             new_string += words[i]
+#             i += 1
+#             x -= 1
+#         else:
+#            # words.lower
+#             new_string += character
+#             i += 1
+#             x += 1
+#     #new_string += words.upper()
+#     return new_string
+# print(alt_caps(words))
+
