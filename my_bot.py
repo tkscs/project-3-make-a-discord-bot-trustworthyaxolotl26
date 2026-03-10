@@ -173,7 +173,8 @@ japanese: kitsune"""
     return """you can ask me the following questons for an intersting awnser:
     what is the **best animal**?
     draw me an **ascii fox**
-    show me some **big fox emojis**
+    show me some **big big fox emojis**
+    show me some **small big fox emojis**
     create a **dot fox**
     tell me some **fox info**
     whats a good **fox book**?
